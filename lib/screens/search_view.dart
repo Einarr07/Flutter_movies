@@ -11,7 +11,7 @@ class MovieSearch extends SearchDelegate<Movie?> {
   @override
   ThemeData appBarTheme(BuildContext context) {
     final ThemeData theme = themeData!.copyWith(
-        hintColor: themeData!.accentColor,
+        hintColor: themeData!.colorScheme.secondary,
         primaryColor: themeData!.primaryColor,
         textTheme: TextTheme(
           headline6: themeData!.textTheme.bodyText1,
@@ -26,7 +26,7 @@ class MovieSearch extends SearchDelegate<Movie?> {
       IconButton(
         icon: Icon(
           Icons.clear,
-          color: themeData!.accentColor,
+          color: themeData!.colorScheme.secondary,
         ),
         onPressed: () {
           query = '';
@@ -40,7 +40,7 @@ class MovieSearch extends SearchDelegate<Movie?> {
     return IconButton(
       icon: Icon(
         Icons.arrow_back,
-        color: themeData!.accentColor,
+        color: themeData!.colorScheme.secondary,
       ),
       onPressed: () {
         close(context, null);
@@ -75,7 +75,7 @@ class MovieSearch extends SearchDelegate<Movie?> {
             child: Icon(
               Icons.search,
               size: 50,
-              color: themeData!.accentColor,
+              color: themeData!.colorScheme.secondary,
             ),
           ),
           Text('Enter a Movie to search.',

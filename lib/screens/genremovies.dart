@@ -22,7 +22,7 @@ class GenreMovies extends StatelessWidget {
         leading: IconButton(
           icon: Icon(
             Icons.arrow_back,
-            color: themeData.accentColor,
+            color: themeData.colorScheme.secondary,
           ),
           onPressed: () {
             Navigator.pop(context);

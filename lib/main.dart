@@ -54,7 +54,7 @@ class _MyHomePageState extends State<MyHomePage> {
         leading: IconButton(
           icon: Icon(
             Icons.menu,
-            color: state.themeData.accentColor,
+            color: state.themeData.colorScheme.secondary
           ),
           onPressed: () {
             _scaffoldKey.currentState?.openDrawer();
@@ -68,7 +68,7 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: state.themeData.primaryColor,
         actions: <Widget>[
           IconButton(
-            color: state.themeData.accentColor,
+            color: state.themeData.colorScheme.secondary,
             icon: Icon(Icons.search),
             onPressed: () async {
               final Movie? result = await showSearch<Movie?>(

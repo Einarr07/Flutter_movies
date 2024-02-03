@@ -260,7 +260,7 @@ class _ParticularGenreMoviesState extends State<ParticularGenreMovies> {
                                   borderRadius: BorderRadius.circular(8.0),
                                   border: Border.all(
                                       width: 1,
-                                      color: widget.themeData.accentColor)),
+                                      color: widget.themeData.colorScheme.secondary)),
                               height: 100,
                               child: Padding(
                                 padding: const EdgeInsets.only(
@@ -517,7 +517,7 @@ class _GenreListState extends State<GenreList> {
                             side: BorderSide(
                                 width: 1,
                                 style: BorderStyle.solid,
-                                color: widget.themeData.accentColor),
+                                color: widget.themeData.colorScheme.secondary),
                             borderRadius: BorderRadius.circular(20.0),
                           ),
                           label: Text(
@@ -645,7 +645,7 @@ class _SearchMovieWidgetState extends State<SearchMovieWidget> {
                               padding:
                                   const EdgeInsets.symmetric(horizontal: 24.0),
                               child: Divider(
-                                color: widget.themeData!.accentColor,
+                                color: widget.themeData!.colorScheme.secondary,
                               ),
                             )
                           ],

@@ -42,7 +42,7 @@ class _SettingsPageState extends State<SettingsPage> {
                         Padding(
                           padding: const EdgeInsets.all(16.0),
                           child: CircleAvatar(
-                              backgroundColor: state.themeData.accentColor,
+                              backgroundColor: state.themeData.colorScheme.secondary,
                               radius: 40,
                               child: Icon(
                                 Icons.person_outline,
@@ -140,7 +140,7 @@ class _SettingsPageState extends State<SettingsPage> {
                                               colors[index]
                                           ? Icon(Icons.done,
                                               color:
-                                                  state.themeData.accentColor)
+                                                  state.themeData.colorScheme.secondary)
                                           : Container(),
                                     ),
                                   ),

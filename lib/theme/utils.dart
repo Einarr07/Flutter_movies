@@ -6,7 +6,7 @@ ThemeData _buildLightTheme() {
   final ThemeData base = ThemeData.light();
   return base.copyWith(
     primaryColor: Colors.white,
-    accentColor: Color(0xff8468DD),
+    hintColor: Color(0xff8468DD),
     canvasColor: Colors.transparent,
     primaryIconTheme: IconThemeData(color: Colors.black),
     textTheme: TextTheme(
@@ -40,7 +40,7 @@ ThemeData _buildDarkTheme() {
   final ThemeData base = ThemeData.dark();
   return base.copyWith(
     primaryColor: Color(0xff242248),
-    accentColor: Color(0xff8468DD),
+    hintColor: Color(0xff8468DD),
     canvasColor: Colors.transparent,
     primaryIconTheme: IconThemeData(color: Colors.black),
     textTheme: TextTheme(
@@ -74,7 +74,7 @@ ThemeData _buildAmoledTheme() {
   final ThemeData base = ThemeData.dark();
   return base.copyWith(
     primaryColor: Colors.black,
-    accentColor: Colors.white,
+    hintColor: Colors.white,
     canvasColor: Colors.transparent,
     primaryIconTheme: IconThemeData(color: Colors.black),
     textTheme: TextTheme(

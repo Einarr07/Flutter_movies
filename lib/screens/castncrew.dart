@@ -18,7 +18,7 @@ class CastAndCrew extends StatelessWidget {
           backgroundColor: themeData!.primaryColor,
           bottom: TabBar(
             indicatorSize: TabBarIndicatorSize.label,
-            indicatorColor: themeData!.accentColor,
+            indicatorColor: themeData!.colorScheme.secondary,
             tabs: [
               Tab(
                 child: Text(
@@ -41,7 +41,7 @@ class CastAndCrew extends StatelessWidget {
           leading: IconButton(
             icon: Icon(
               Icons.arrow_back,
-              color: themeData!.accentColor,
+              color: themeData!.colorScheme.secondary,
             ),
             onPressed: () {
               Navigator.pop(context);
