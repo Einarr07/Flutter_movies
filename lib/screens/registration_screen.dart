@@ -1,17 +1,40 @@
 import 'package:flutter/material.dart';
-import 'package:movies/screens/registration_screen.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
-class LoginScreen extends StatefulWidget {
+class RegistrationScreen extends StatefulWidget {
   final ThemeData? themeData;
-  LoginScreen({this.themeData});
+  RegistrationScreen({this.themeData});
 
   @override
-  _LoginScreenState createState() => _LoginScreenState();
+  _RegistrationScreenState createState() => _RegistrationScreenState();
 }
 
-class _LoginScreenState extends State<LoginScreen> {
+class _RegistrationScreenState extends State<RegistrationScreen> {
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
+
+  Future<void> _register() async {
+    try {
+      UserCredential userCredential =
+      await FirebaseAuth.instance.createUserWithEmailAndPassword(
+        email: emailController.text,
+        password: passwordController.text,
+      );
+
+      // Puedes realizar acciones adicionales después del registro si es necesario.
+      print('Usuario registrado con éxito: ${userCredential.user?.email}');
+    } on FirebaseAuthException catch (e) {
+      if (e.code == 'weak-password') {
+        print('La contraseña es débil');
+      } else if (e.code == 'email-already-in-use') {
+        print('La cuenta ya existe para este correo electrónico');
+      } else {
+        print('Error de registro: ${e.message}');
+      }
+    } catch (e) {
+      print('Error inesperado: $e');
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +51,7 @@ class _LoginScreenState extends State<LoginScreen> {
           },
         ),
         title: Text(
-          'Log In',
+          'Register',
           style: widget.themeData!.textTheme.headline5,
         ),
       ),
@@ -58,32 +81,14 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
             SizedBox(height: 32.0),
             ElevatedButton(
-              onPressed: () {
-                // Agrega aquí la lógica para manejar el inicio de sesión
-                // Puedes acceder a los valores de los controladores: emailController.text y passwordController.text
-              },
+              onPressed: _register,
               style: ElevatedButton.styleFrom(
                 primary: widget.themeData!.primaryColor,
                 onPrimary: widget.themeData!.colorScheme.secondary,
               ),
               child: Text(
-                'Log In',
+                'Register',
                 style: widget.themeData!.textTheme.button,
-              ),
-            ),
-            SizedBox(height: 16.0),
-            TextButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => RegistrationScreen(themeData: widget.themeData)
-                  )
-                );
-              },
-              child: Text(
-                'Create an Account',
-                style: widget.themeData!.textTheme.bodyText1,
               ),
             ),
           ],

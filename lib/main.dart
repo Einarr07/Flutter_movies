@@ -10,7 +10,7 @@ import 'package:movies/screens/widgets.dart';
 import 'package:movies/theme/theme_state.dart';
 import 'package:provider/provider.dart';
 
-void main() => runApp(MyApp());
+void main() async => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   @override
