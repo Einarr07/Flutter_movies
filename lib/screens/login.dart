@@ -1,5 +1,8 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:movies/screens/registration_screen.dart';
+import 'package:movies/screens/ForumPage.dart';
+import 'package:movies/modal_class/movie.dart';
 
 class LoginScreen extends StatefulWidget {
   final ThemeData? themeData;
@@ -58,9 +61,20 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
             SizedBox(height: 32.0),
             ElevatedButton(
-              onPressed: () {
-                // Agrega aquí la lógica para manejar el inicio de sesión
-                // Puedes acceder a los valores de los controladores: emailController.text y passwordController.text
+              onPressed: () async {
+                try {
+                  UserCredential userCredential = await FirebaseAuth.instance.signInWithEmailAndPassword(
+                    email: emailController.text,
+                    password: passwordController.text,
+                  );
+                  // Si el inicio de sesión es exitoso, redirige al foro
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(builder: (context) => ForumPage()),
+                  );
+                } catch (e) {
+                  print("Error al iniciar sesión: $e");
+                }
               },
               style: ElevatedButton.styleFrom(
                 primary: widget.themeData!.primaryColor,
@@ -71,6 +85,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 style: widget.themeData!.textTheme.button,
               ),
             ),
+
             SizedBox(height: 16.0),
             TextButton(
               onPressed: () {

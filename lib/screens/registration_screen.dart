@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'login.dart';
 
 class RegistrationScreen extends StatefulWidget {
   final ThemeData? themeData;
@@ -23,6 +24,14 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
 
       // Puedes realizar acciones adicionales después del registro si es necesario.
       print('Usuario registrado con éxito: ${userCredential.user?.email}');
+
+      // Redirige al usuario a la pantalla de inicio de sesión después del registro exitoso
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(
+          builder: (context) => LoginScreen(themeData: widget.themeData),
+        ),
+      );
     } on FirebaseAuthException catch (e) {
       if (e.code == 'weak-password') {
         print('La contraseña es débil');

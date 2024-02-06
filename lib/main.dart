@@ -1,5 +1,7 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:movies/api/endpoints.dart';
+import 'package:movies/firebase_options.dart';
 import 'package:movies/modal_class/function.dart';
 import 'package:movies/modal_class/genres.dart';
 import 'package:movies/modal_class/movie.dart';
@@ -10,7 +12,14 @@ import 'package:movies/screens/widgets.dart';
 import 'package:movies/theme/theme_state.dart';
 import 'package:provider/provider.dart';
 
-void main() async => runApp(MyApp());
+
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+      options: DefaultFirebaseOptions.currentPlatform,
+  );
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   @override

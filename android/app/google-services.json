@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "899675298466",
+    "project_id": "peliculas-78eb5",
+    "storage_bucket": "peliculas-78eb5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:899675298466:android:f3372aaeede62b778c55fb",
+        "android_client_info": {
+          "package_name": "com.bimsina.movies"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkSSh6lHBt4YhoO1s6WJDZswlRiNi1HRE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
