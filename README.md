@@ -13,6 +13,5 @@
 
 ## Autores
 
-| [<img src="https://avatars.githubusercontent.com/u/96399138?v=4" width=115><br><sub>Mateo Congo</sub>](https://github.com/Einarr07) |  [<img src="![image](https://github.com/Einarr07/Flutter_movies/assets/85316345/cd9aa459-d538-48ef-9008-1ef4b632e2cc)
-" width=115><br><sub>Nicole Motoche</sub>](https://github.com/nicolemotoche29) |  [<img src="https://avatars.githubusercontent.com/u/75103508?v=4" width=115><br><sub>Erick Palomo</sub>](https://github.com/erick200011) |
+| [<img src="https://avatars.githubusercontent.com/u/96399138?v=4" width=115><br><sub>Mateo Congo</sub>](https://github.com/Einarr07) |  [<img src="https://avatars.githubusercontent.com/u/85316345?v=4" width=115><br><sub>Nicole Motoche</sub>](https://github.com/nicolemotoche29) |  [<img src="https://avatars.githubusercontent.com/u/75103508?v=4" width=115><br><sub>Erick Palomo</sub>](https://github.com/erick200011) |
 | :---: | :---: | :---: |
