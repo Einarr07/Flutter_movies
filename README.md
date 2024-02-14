@@ -12,7 +12,8 @@
 </div>
 
 ## APK 📲
-Descarga la aplicación de escritoro y movil [aquí](https://epnecuador-my.sharepoint.com/personal/fernanda_motoche_epn_edu_ec/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Ffernanda%5Fmotoche%5Fepn%5Fedu%5Fec%2FDocuments%2FMOVILES&view=0)
+Descarga la aplicación de escritoro y movil [aquí](https://drive.google.com/drive/folders/10zT9RwDqEcHw0_5mDcFqOnwiko7HuDay)
+
 
 ## Autores 🫱🏼‍🫲🏽
 
