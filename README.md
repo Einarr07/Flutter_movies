@@ -16,6 +16,22 @@
 - Nicole Motoche
 - Erick Palomo
 
+## Implementacion ⛓️
+- Primero es solucionar las dependencias actualizando a la versión más actual de cupertino_icons dentro del archivo pubspec.yaml
+![image](https://github.com/Einarr07/Flutter_movies/assets/85316345/fab87bd0-6213-45ba-90c2-ba8eb20c9b8f)
+
+- Aplicando el comando
+![image](https://github.com/Einarr07/Flutter_movies/assets/85316345/8354147c-03ed-441e-b2e6-4615e4efd755)
+
+- Si queriaejecutar la aplicación pero nos menciono algunos errores, ya que el código sigue con una versión anterior
+![image](https://github.com/Einarr07/Flutter_movies/assets/85316345/ace217bb-5d1d-4b95-b885-7f485108f234)
+
+- 
+- 
+- 
+- 
+- 
+
 
 ## APK 📲
 Descarga la aplicación de escritoro y movil [aquí](https://drive.google.com/drive/folders/10zT9RwDqEcHw0_5mDcFqOnwiko7HuDay)
