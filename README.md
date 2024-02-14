@@ -38,6 +38,7 @@
 ![image](https://github.com/Einarr07/Flutter_movies/assets/85316345/d8f50e0c-79ac-438c-95dd-b30a6f0a8c56)
 
 - Y contamos con una función con distintos temas
+
 ![image](https://github.com/Einarr07/Flutter_movies/assets/85316345/1f17698c-4ebd-44d2-9f04-e522813bafdf)
 
 ## Cambios y Mejoras 🥳
