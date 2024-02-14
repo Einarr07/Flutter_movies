@@ -4,12 +4,18 @@
 </p>
 </div>
 
-  # FLUTTER-MOVIES 🎬📽️
+  # FLUTTER-MOVIES 📽️
 <div>
 <p align='center'>
 <img src="https://esfot.epn.edu.ec/images/headers/logo_esfot_buho.png" alt="Esfot" width="300px">
 </p>
 </div>
+
+# Aplicativo de Peliculas 🎬
+- Mateo Congo
+- Nicole Motoche
+- Erick Palomo
+
 
 ## APK 📲
 Descarga la aplicación de escritoro y movil [aquí](https://drive.google.com/drive/folders/10zT9RwDqEcHw0_5mDcFqOnwiko7HuDay)
