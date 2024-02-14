@@ -35,6 +35,7 @@
 - Procedimos a poner nuestras propias credenciales [aqui](https://www.themoviedb.org/)
 
 - Cuando ya obtuvismos nuestras credenciales nos aparecio la siguiente información
+
 ![image](https://github.com/Einarr07/Flutter_movies/assets/85316345/d8f50e0c-79ac-438c-95dd-b30a6f0a8c56)
 
 - Y contamos con una función con distintos temas
